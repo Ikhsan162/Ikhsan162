@@ -12,13 +12,11 @@ Guna menunjang efisiensi dan kualitas kode, berikut adalah ekosistem teknologi y
 | :--- | :--- |
 | **Bahasa Pemrograman** | ![Python](https://shields.io) |
 
-
 ---
 
 ## 📊 Aktivitas & Statistik GitHub
 
 Di bawah ini adalah dasbor real-time yang merangkum produktivitas pemrograman serta bahasa yang paling sering saya gunakan:
-
 
 
 ---
@@ -28,7 +26,6 @@ Di bawah ini adalah dasbor real-time yang merangkum produktivitas pemrograman se
 Apakah Anda sedang mencari freelancer untuk mengotomatiskan pekerjaan Excel Anda, memindahkan data dari website, atau membangun backend sistem? Mari berdiskusi tentang proyek Anda!
 
 * 💼 **Freelancer Platform:** 
-
 📩 **Hubungi Saya**
 * **Email:** ichsan.pejaka@gmail.com
 * 📍 **Lokasi:** Indonesia 🇮🇩
