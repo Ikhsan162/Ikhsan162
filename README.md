@@ -11,9 +11,7 @@ Guna menunjang efisiensi dan kualitas kode, berikut adalah ekosistem teknologi y
 | Kategori | Teknologi & Peralatan |
 | :--- | :--- |
 | **Bahasa Pemrograman** | ![Python](https://shields.io) |
-| **Ekstraksi Data / Scraping** | ![BeautifulSoup](https://shields.io) ![Requests](https://shields.io) |
-| **Pengolahan Data** | ![Pandas](https://shields.io) ![OpenPyXL](https://shields.io) |
-| **Alat Pengembangan** | ![VS Code](https://shields.io) ![Git](https://shields.io) ![GitHub](https://shields.io) |
+
 
 ---
 
