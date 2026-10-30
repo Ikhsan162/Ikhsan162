@@ -19,10 +19,7 @@ Guna menunjang efisiensi dan kualitas kode, berikut adalah ekosistem teknologi y
 
 Di bawah ini adalah dasbor real-time yang merangkum produktivitas pemrograman serta bahasa yang paling sering saya gunakan:
 
-<p align="left">
-  <img src="https://vercel.app" alt="Statistik GitHub Ikhsan" height="160" />
-  <img src="https://vercel.app" alt="Bahasa Pemrograman Terbanyak" height="160" />
-</p>
+
 
 ---
 
