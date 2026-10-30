@@ -1,21 +1,39 @@
-# Halo, Saya Ikhsan! 👋
+# 👨‍💻 Ikhsan | Python Developer & Automation Specialist
 
-Saya adalah seorang **Python Developer** pemula yang berfokus pada otomatisasi data, web scraping, dan pengembangan program berbasis Python. Saya senang memecahkan masalah lewat baris kode yang efisien dan rapi.
+Selamat datang di profil GitHub saya! Saya adalah seorang pengembang perangkat lunak berfokus pada **Python** yang berdedikasi untuk menciptakan solusi otomatisasi data, efisiensi alur kerja (*workflow*), serta ekstraksi data web (*web scraping*).
 
-## 🛠️ Keahlian & Peralatan
-![Python](https://shields.io)
-![VS Code](https://shields.io)
-![Git](https://shields.io)
-![GitHub](https://shields.io)
+---
 
-## 📊 Statistik GitHub Saya
-Berikut adalah ringkasan keaktifan saya dalam menulis kode:
+## 🛠️ Tech Stack & Alat Kerja
+
+Guna menunjang efisiensi dan kualitas kode, berikut adalah ekosistem teknologi yang saya gunakan sehari-hari:
+
+| Kategori | Teknologi & Peralatan |
+| :--- | :--- |
+| **Bahasa Pemrograman** | ![Python](https://shields.io) |
+| **Ekstraksi Data / Scraping** | ![BeautifulSoup](https://shields.io) ![Requests](https://shields.io) |
+| **Pengolahan Data** | ![Pandas](https://shields.io) ![OpenPyXL](https://shields.io) |
+| **Alat Pengembangan** | ![VS Code](https://shields.io) ![Git](https://shields.io) ![GitHub](https://shields.io) |
+
+---
+
+## 📊 Aktivitas & Statistik GitHub
+
+Di bawah ini adalah dasbor real-time yang merangkum produktivitas pemrograman serta bahasa yang paling sering saya gunakan:
 
 <p align="left">
-  <img src="https://vercel.app" alt="Statistik GitHub Ikhsan" height="150" />
-  <img src="https://vercel.app" alt="Bahasa Pemrograman Terbanyak" height="150" />
+  <img src="https://vercel.app" alt="Statistik GitHub Ikhsan" height="160" />
+  <img src="https://vercel.app" alt="Bahasa Pemrograman Terbanyak" height="160" />
 </p>
 
 ---
+
+## 💼 Hubungi Saya Untuk Kolaborasi
+
+Apakah Anda sedang mencari freelancer untuk mengotomatiskan pekerjaan Excel Anda, memindahkan data dari website, atau membangun backend sistem? Mari berdiskusi tentang proyek Anda!
+
+* 💼 **Freelancer Platform:** 
+
 📩 **Hubungi Saya**
 * **Email:** ichsan.pejaka@gmail.com
+* 📍 **Lokasi:** Indonesia 🇮🇩
