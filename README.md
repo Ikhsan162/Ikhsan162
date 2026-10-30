@@ -10,7 +10,7 @@ Guna menunjang efisiensi dan kualitas kode, berikut adalah ekosistem teknologi y
 
 | Kategori | Teknologi & Peralatan |
 | :--- | :--- |
-| **Bahasa Pemrograman** | ![Python](https://shields.io) |
+| 🚀 **Bahasa Pemrograman** | `Python` |
 
 ---
 
