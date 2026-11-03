@@ -1,35 +1,31 @@
-# 🛒 Mini-Market Management System (Python & MySQL)
+# 🛍️ E-Commerce Product Scraper & Excel Automation
 
-Aplikasi berbasis Command-Line Interface (CLI) yang dibangun menggunakan **Python** dan terintegrasi dengan **MySQL Database** untuk mengelola sistem operasional mini-market secara sederhana, cepat, dan efisien.
+Aplikasi berbasis Python yang dirancang untuk melakukan *Web Scraping* pada situs *e-commerce* modern secara otomatis, mengekstrak data produk penting (seperti nama, harga, deskripsi, dan rating), serta merapikannya langsung ke dalam format laporan **Excel (`.xlsx`)**.
+
+---
 
 ## 🚀 Fitur Utama
-* **Manajemen Barang (CRUD):** 
-  * Menambahkan data barang baru ke database (`Create`)
-  * Menampilkan daftar inventaris barang (`Read`)
-  * Memperbarui informasi barang (`Update`)
-  * Menghapus barang dari inventaris (`Delete`)
-* **Antarmuka Modular:** Struktur kode yang terorganisir dengan pemisahan antara logika utama, utilitas terminal, dan pengelolaan database.
-* **Sistem Keamanan & Lingkungan:** Dilengkapi dengan utilitas berbasis sistem (`socket`, `time`) untuk mempercantik tampilan awal dan animasi penutupan program (*countdown exit*).
+* **Otomasi Pengambilan Data:** Mengambil data produk secara otomatis tanpa harus *copy-paste* secara manual.
+* **Pengolahan Data (Pandas):** Menyaring, menstrukturkan, dan mengelola data mentah menjadi tabel yang bersih dan siap dianalisis.
+* **Ekspor Otomatis ke Excel:** Menyimpan hasil *scraping* langsung ke file Excel menggunakan modul `openpyxl` dan `pandas`.
+* **Struktur Kode Modular:** Memisahkan logika pengambilan data (*scraping*) dan eksekusi utama agar kode lebih mudah dibaca dan dikembangkan.
 
 ---
 
 ## 🛠️ Teknologi yang Digunakan
 * **Bahasa Pemrograman:** Python
-* **Database:** MySQL
-* **Library Python:** 
-  * `mysql-connector-python` (Koneksi database)
-  * `socket` (Informasi host/sistem)
-  * `time` (Utilitas jeda waktu / animasi keluar)
+* **Library Utama:**
+  * `requests` (HTTP requests untuk mengakses halaman web)
+  * `BeautifulSoup4` (Parsing HTML & ekstraksi elemen data)
+  * `Pandas` (Manipulasi dan analisis data)
+  * `OpenPyXL` (Mesin pembuat file Excel)
 
 ---
 
 ## 📂 Struktur Proyek
 
 ```text
-├── Games/
-│   ├── lord.py            # Modul game tambahan
-│   └── warung_mini.py     # Logika utama sistem mini-market & CRUD
-├── services/
-│   └── db.py              # Konfigurasi dan fungsi query database MySQL
-├── top.py                 # Utilitas antarmuka (Welcome message & Exit animation)
-└── main.py                # Titik masuk utama (Entry point) program
+ecommerce_scraper/
+├── scraper.py          # Modul logika utama untuk mengambil dan memparsing data web
+├── main.py             # Titik masuk program & eksekusi penyimpanan ke Excel
+└── README.md           # Dokumentasi proyek untuk portofolio GitHub
