@@ -1,31 +1,35 @@
-# 👨‍💻 Ikhsan | Python Developer & Automation Specialist
+# 🛒 Mini-Market Management System (Python & MySQL)
 
-Selamat datang di profil GitHub saya! Saya adalah seorang pengembang perangkat lunak berfokus pada **Python** yang berdedikasi untuk menciptakan solusi otomatisasi data, efisiensi alur kerja (*workflow*), serta ekstraksi data web (*web scraping*).
+Aplikasi berbasis Command-Line Interface (CLI) yang dibangun menggunakan **Python** dan terintegrasi dengan **MySQL Database** untuk mengelola sistem operasional mini-market secara sederhana, cepat, dan efisien.
 
----
-
-## 🛠️ Tech Stack & Alat Kerja
-
-Guna menunjang efisiensi dan kualitas kode, berikut adalah ekosistem teknologi yang saya gunakan sehari-hari:
-
-| Kategori | Teknologi & Peralatan |
-| :--- | :--- |
-| 🚀 **Bahasa Pemrograman** | `Python` |
-
----
-
-## 📊 Aktivitas & Statistik GitHub
-
-Di bawah ini adalah dasbor real-time yang merangkum produktivitas pemrograman serta bahasa yang paling sering saya gunakan:
-
+## 🚀 Fitur Utama
+* **Manajemen Barang (CRUD):** 
+  * Menambahkan data barang baru ke database (`Create`)
+  * Menampilkan daftar inventaris barang (`Read`)
+  * Memperbarui informasi barang (`Update`)
+  * Menghapus barang dari inventaris (`Delete`)
+* **Antarmuka Modular:** Struktur kode yang terorganisir dengan pemisahan antara logika utama, utilitas terminal, dan pengelolaan database.
+* **Sistem Keamanan & Lingkungan:** Dilengkapi dengan utilitas berbasis sistem (`socket`, `time`) untuk mempercantik tampilan awal dan animasi penutupan program (*countdown exit*).
 
 ---
 
-## 💼 Hubungi Saya Untuk Kolaborasi
+## 🛠️ Teknologi yang Digunakan
+* **Bahasa Pemrograman:** Python
+* **Database:** MySQL
+* **Library Python:** 
+  * `mysql-connector-python` (Koneksi database)
+  * `socket` (Informasi host/sistem)
+  * `time` (Utilitas jeda waktu / animasi keluar)
 
-Apakah Anda sedang mencari freelancer untuk mengotomatiskan pekerjaan Excel Anda, memindahkan data dari website, atau membangun backend sistem? Mari berdiskusi tentang proyek Anda!
+---
 
-* 💼 **Freelancer Platform:** 
-📩 **Hubungi Saya**
-* **Email:** ichsan.pejaka@gmail.com
-* 📍 **Lokasi:** Indonesia 🇮🇩
+## 📂 Struktur Proyek
+
+```text
+├── Games/
+│   ├── lord.py            # Modul game tambahan
+│   └── warung_mini.py     # Logika utama sistem mini-market & CRUD
+├── services/
+│   └── db.py              # Konfigurasi dan fungsi query database MySQL
+├── top.py                 # Utilitas antarmuka (Welcome message & Exit animation)
+└── main.py                # Titik masuk utama (Entry point) program
