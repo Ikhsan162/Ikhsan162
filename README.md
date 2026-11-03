@@ -1,10 +1,21 @@
-# 🛍️ E-Commerce Product Scraper & Excel Automation
+# 🚀 Python Automation & Data Engineering Portfolio
 
-Aplikasi berbasis Python yang dirancang untuk melakukan *Web Scraping* pada situs *e-commerce* modern secara otomatis, mengekstrak data produk penting (seperti nama, harga, deskripsi, dan rating), serta merapikannya langsung ke dalam format laporan **Excel (`.xlsx`)**.
+Kumpulan proyek otomatisasi berbasis Python yang dirancang untuk mengoptimalkan alur kerja data—mulai dari pengambilan data otomatis (*web scraping*) hingga konsolidasi dan pembersihan laporan bisnis (*data cleaning & automation*).
 
 ---
 
-## 🚀 Fitur Utama
+## 📂 Daftar Proyek
+
+1. [E-Commerce Product Scraper](#1-e-commerce-product-scraper)
+2. [Excel Automation & Multi-Source Data Consolidation](#2-excel-automation--multi-source-data-consolidation)
+
+---
+
+## 1. E-Commerce Product Scraper
+
+Aplikasi berbasis Python yang dirancang untuk melakukan *Web Scraping* pada situs *e-commerce* secara otomatis, mengekstrak data produk penting (nama, harga, deskripsi, dan rating), serta merapikannya langsung ke dalam format laporan Excel.
+
+### 🌟 Fitur Utama
 * **Otomasi Pengambilan Data:** Mengambil data produk secara otomatis tanpa harus *copy-paste* secara manual.
 * **Pengolahan Data (Pandas):** Menyaring, menstrukturkan, dan mengelola data mentah menjadi tabel yang bersih dan siap dianalisis.
 * **Ekspor Otomatis ke Excel:** Menyimpan hasil *scraping* langsung ke file Excel menggunakan modul `openpyxl` dan `pandas`.
@@ -12,20 +23,32 @@ Aplikasi berbasis Python yang dirancang untuk melakukan *Web Scraping* pada situ
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
-* **Bahasa Pemrograman:** Python
-* **Library Utama:**
-  * `requests` (HTTP requests untuk mengakses halaman web)
-  * `BeautifulSoup4` (Parsing HTML & ekstraksi elemen data)
-  * `Pandas` (Manipulasi dan analisis data)
-  * `OpenPyXL` (Mesin pembuat file Excel)
+## 2. Excel Automation & Multi-Source Data Consolidation
+
+Aplikasi berbasis Python untuk melakukan konsolidasi, pembersihan data (*data cleaning*), dan otomatisasi laporan dari berbagai sumber file (Excel/CSV multi-cabang) secara efisien guna meminimalkan *human error*.
+
+### 🌟 Fitur Utama
+* **Multi-File Batch Processing:** Secara otomatis memindai dan menggabungkan seluruh file laporan `.xlsx` dan `.csv` yang ada di dalam folder `data_mentah/`.
+* **Advanced Data Cleaning:** 
+  * Membersihkan spasi berlebih (*whitespaces*) pada data teks.
+  * Menyeragamkan format penulisan nama produk menjadi *Title Case*.
+  * Menghapus baris data duplikat secara otomatis.
+  * Menangani nilai data yang kosong (*missing values*) agar perhitungan tetap akurat.
+* **Automated Business Calculation:** Menghitung total pendapatan secara otomatis (`Jumlah` × `Harga Satuan`).
+* **Professional Export:** Mengekspor hasil akhir konsolidasi menjadi satu laporan nasional yang bersih dan siap disajikan ke manajemen.
 
 ---
 
-## 📂 Struktur Proyek
+## 🛠️ Teknologi yang Digunakan
+* **Python**
+* **Pandas** (Manipulasi dan analisis data tabular)
+* **OpenPyxl** (Membaca dan menulis file Excel)
 
-```text
-ecommerce_scraper/
-├── scraper.py          # Modul logika utama untuk mengambil dan memparsing data web
-├── main.py             # Titik masuk program & eksekusi penyimpanan ke Excel
-└── README.md           # Dokumentasi proyek untuk portofolio GitHub
+---
+
+## ⚙️ Cara Menjalankan Proyek
+1. Pastikan Anda sudah menginstal Python di komputer.
+2. Buat dan aktifkan *Virtual Environment*:
+   ```powershell
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
