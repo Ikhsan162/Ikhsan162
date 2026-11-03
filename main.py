@@ -1,30 +1,25 @@
-import cv2
-
-face_ref = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-camera = cv2.VideoCapture(0)
-
-def face_detection(frame):
-    optimized_frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
-    faces = face_ref.detectMultiScale(optimized_frame, scaleFactor=1.1, minSize=(200, 200), minNeighbors=5)
-    return faces
-
-def drawer_box(frame):
-    for (x, y, w, h) in face_detection(frame):
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 4)
-
-def close_window():
-    camera.release()
-    cv2.destroyAllWindows()
-    exit()
+from scraper import scrape_modern_ecommerce
 
 def main():
-    while True:
-        _, frame = camera.read()
-        drawer_box(frame)
-        cv2.imshow("CuyFace AI", frame)
+    print("--- Memulai Program E-Commerce Scraper ---")
+    
+    # Panggil fungsi scraping dari file scraper.py
+    df_result = scrape_modern_ecommerce()
+    
+    if df_result is not None and not df_result.empty:
+        # Tentukan nama file output Excel
+        output_file = "hasil_scraping_produk.xlsx"
         
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            close_window()
+        # Simpan hasil scraping ke file Excel secara otomatis
+        df_result.to_excel(output_file, index=False)
+        print(f"\nBerhasil! Data produk telah disimpan ke dalam file '{output_file}'.")
+        print(f"Total produk yang berhasil diambil: {len(df_result)} item.")
+        
+        # Menampilkan pratinjau data di terminal
+        print("\nPratinjau Data:")
+        print(df_result.head())
+    else:
+        print("Tidak ada data yang berhasil diambil.")
 
-if __name__ =="__main__":
+if __name__ == "__main__":
     main()
