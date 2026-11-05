@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pengecekan Usia</title>
+</head>
+<body>
+    <div align="center" style="margin-top: 50px;">
+        <h2>Pengecekan usia berdasarkan tahun lahir</h2>
+        
+        <form method="POST" style="margin: 20px 0;">
+            <label for="tahun_lahir">Masukkan Tahun Lahir: </label>
+            <input type="number" name="tahun_lahir" required>
+            <button type="submit">Hitung Usia</button>
+        </form>
+
+        {% if usia is not none %}
+            <h3 style="color: blue;">Usia anda saat ini adalah {{ usia }} tahun</h3>
+        {% endif %}
+
+        <p style="margin-top: 20px;">
+            <a href="/">kembali ke halaman utama</a>
+        </p>
+    </div>
+</body>
+</html>
