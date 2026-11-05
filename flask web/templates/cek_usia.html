@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Usia</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .ai-result-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin-top: 15px;
+            text-align: left;
+            border-radius: 4px;
+            line-height: 1.6;
+        }
+        /* Mengatur agar list/poin dari markdown tampil rapi */
+        .ai-result-box ul, .ai-result-box ol {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hitung Usia</h1>
+
+    <form method="POST" action="/usia">
+        <label for="tahun_lahir">Tahun Lahir:</label>
+        <input type="number" id="tahun_lahir" name="tahun_lahir" required min="1900" max="2024">
+        <button type="submit">Hitung</button>
+    </form>
+
+    {% if usia is not none and usia > 0 %}
+    <h2>Hasil</h2>
+    <p>Tahun Lahir: {{ tahun_lahir }}</p>
+    <p>Usia Anda: {{ usia }} tahun</p>
+    
+    <div class="ai-result-box">
+        <strong>Fakta Teknologi:</strong>
+        <!-- Gunakan filter | safe di sini -->
+        <div>{{ ai_output | safe }}</div>
+    </div>
+    
+    <br>
+    <p><a href="/">← Kembali ke Home</a></p>
+
+{% elif usia is not none and usia <= 0 %}
+    <p>Masukkan tahun lahir yang valid</p>
+    <br>
+    <p><a href="/">← Kembali ke Home</a></p>
+{% endif %}
+</body>
+</html>
