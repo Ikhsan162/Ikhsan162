@@ -1,0 +1,6 @@
+Flask
+groq
+beautifulsoup4
+requests
+markdown
+gunicorn
